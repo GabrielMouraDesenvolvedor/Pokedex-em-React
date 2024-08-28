@@ -1,0 +1,89 @@
+/* App.css */
+
+/* Estilos gerais para o corpo da aplicação */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo clara */
+  padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black; /* Cor do texto */
+}
+
+/* Estilos para o título */
+.App-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: black; /* Cor do texto */
+}
+
+/* Estilos para o campo de pesquisa e botão */
+.App-header input,
+.App-header button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Estilos para o cartão do Pokémon */
+.pokemon-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Estilos para a imagem do Pokémon */
+.pokemon-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Estilos para os atributos do Pokémon */
+.pokemon-stats {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Estilos para a lista de atributos */
+.pokemon-stats ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para cada item da lista de atributos */
+.pokemon-stats li {
+  font-size: 1rem;
+  color: black; /* Cor do texto */
+}
+
+/* Estilos para o botão de pesquisa */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #61dafb; /* Cor de fundo dos botões */
+  color: black; /* Cor do texto dos botões */
+}
+
+button:disabled {
+  background-color: #ccc; /* Cor de fundo dos botões desativados */
+  cursor: not-allowed;
+}
