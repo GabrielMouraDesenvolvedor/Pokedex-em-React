@@ -50,6 +50,13 @@ const App = () => {
     }
   };
 
+  // Função para lidar com a tecla Enter no campo de pesquisa
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch(); // Se a tecla pressionada for Enter, chama a função de busca
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -61,6 +68,7 @@ const App = () => {
           placeholder="Digite o nome do Pokémon"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={handleKeyDown} // Adiciona o evento para a tecla Enter
         />
         <button onClick={handleSearch}>Pesquisar</button>
 
